@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practical 09</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #dddddd;   /* grey background */
+    }
+    header {
+        background-color: #0b5f16;   /* dark green */
+        color: white;
+        text-align: center;
+        padding: 40px 0;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .boxes {
+        max-width: 1000px;
+        margin: 40px auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .box {
+        background-color: #8a8f2a;  /* olive */
+        flex: 1;
+        padding: 25px 0;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    /* Mobile view – stack boxes vertically */
+    @media (max-width: 600px) {
+        .boxes {
+            flex-direction: column;
+        }
+    }
+</style>
+</head>
+<body>
+<header>
+    Responsive Web Page
+</header>
+<div class="boxes">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+</div>
+
+</body>
+</html>

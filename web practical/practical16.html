@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Toggle Example</title>
+<style>
+.box{display:none;padding:10px;background:lightgreen;}
+.show{display:block;}
+</style>
+</head>
+<body>
+
+<button id="btn">Show</button>
+<div id="box" class="box">This content is toggled</div>
+
+<script>
+let btn=document.getElementById("btn");
+let box=document.getElementById("box");
+
+btn.addEventListener("click",()=>{
+  box.classList.toggle("show");
+  btn.innerHTML = box.classList.contains("show") ? "Hide" : "Show";
+});
+</script>
+
+</body>
+</html>
